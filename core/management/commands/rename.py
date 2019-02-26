@@ -12,7 +12,7 @@ class Command(BaseCommand):
 		new_project_name = kwargs['new_project_name']
 		current_project_name = str(os.environ.get("DJANGO_SETTINGS_MODULE")
 			.split('.')[0])
-		files_to_rename = [f'{current_project_name}/settings.py', 
+		files_to_rename = [f'{current_project_name}/settings/development.py', 
 							f'{current_project_name}/wsgi.py', 'manage.py' ]
 		folder_to_rename = current_project_name
 
