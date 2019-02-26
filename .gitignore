@@ -1,3 +1,4 @@
 .env
 Pipfile.lock
+Pipfile
 static_in_env
